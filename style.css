@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+  color: #fff;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+.box {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+  min-height: 480px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 15%, transparent 50%, transparent 85%, rgba(255, 255, 255, 0.30) 100%);
+  z-index: -1;
+}
+
+.box__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.form-list__row {
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert(1);
+}
+
+.form-list__row img {
+  width: 20px
+}
+
+.form-list__row input {
+  height: 100%;
+  flex: 1;
+  padding: 5px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.form-list__row input::placeholder {
+  color: #fff;
+  font-size: 15px;
+}
+
+.form-list__row--inline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-list__row--inline input {
+  margin-right: 5px;
+}
+
+.form__btn {
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #111;
+  margin: 20px 0px 10px 0;
+  padding: 8px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
